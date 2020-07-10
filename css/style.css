@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 10ms !important;
+  transition-delay: 0 !important;
+}
+
+html[data-theme="dark"] {
+  --bg-color: rgb(10, 12, 17);
+  --text-color: rgb(255, 255, 255);
+  --secondary-text: rgb(182, 188, 190);
+}
+
+html {
+  --bg-color: rgb(255, 255, 255);
+  --text-color: rgb(10, 12, 17);
+  --secondary-text: rgb(89, 96, 99);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  letter-spacing: 0.1em;
+}
+
+body {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+}
+
+.hero-section {
+  color: var(--text-color);
+  margin: 10px 10px 20px 10px ; 
+  padding: 15px 30px;
+}
+
+.hero-section p {
+  margin: 10px 0px 10px 0px;
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: var(--text-color);
+  display: inline;
+}
+
+.navbar ul {
+  display: grid;
+  grid-template-columns: 33% auto 33%;
+  list-style: none;
+  border-top: 1px solid rgba(228, 234, 236, 0.555);
+  padding: 1rem;
+}
+
+.dark-mode {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: right;
+  margin: 12px;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.main-content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--text-color);
+  padding: 40px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 1px solid rgb(179, 168, 168);
+  height: 180px;
+  width: 180px;
+  background-color: rgb(13, 15, 22);
+  display: inline-block;
+  border-radius: 50%;
+  background-image: url("../images/boy-38262_640.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 7rem;
+  margin-top: -15px;
+}
+
+.social-media{
+    margin-top: -1.2rem;
+}
+
+.social-media a {
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0 15px;
+}
